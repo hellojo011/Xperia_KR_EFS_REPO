@@ -1,0 +1,1845 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<policy name="LGU" changelist="$Change: LGU-2026-10-22-R5.1-PLMN-AUDIT $" policy_ver="125.2.2">
+  <initial>
+    <plmn_list name="lgu_home_plmns">450-06</plmn_list>
+    <mcc_list name="korea_location_mccs">450</mcc_list>
+    <define_fullrat_config>
+      <actions>
+        <rat_capability base="none">
+          <include>G W L 5G</include>
+        </rat_capability>
+        <if>
+          <cond>
+            <location_mcc_in list="korea_location_mccs"/>
+          </cond>
+          <then>
+            <rat_capability base="none">
+              <include>W L 5G</include>
+            </rat_capability>
+          </then>
+          <else>
+            <rat_capability base="none">
+              <include>G W L 5G</include>
+            </rat_capability>
+          </else>
+        </if>
+        <if>
+          <all_of>
+            <location_mcc_in list="korea_location_mccs"/>
+            <serving_plmn_in list="lgu_home_plmns"/>
+          </all_of>
+          <then>
+            <rat_capability base="none">
+              <include>L 5G</include>
+            </rat_capability>
+          </then>
+        </if>
+        <rf_bands list="rf_bands_default_fr1"/>
+        <if>
+          <any_of>
+            <not>
+              <phone_operating_mode>ONLINE</phone_operating_mode>
+            </not>
+            <not>
+              <have_location/>
+            </not>
+          </any_of>
+          <then>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_01_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_01_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="skt_kr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_01_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="kt_kr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_01_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="lgu_kr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="korea_default_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_02_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_02_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="unitel_mn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_02_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mobicom_mn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_02_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="skytel_mn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_02_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="gmobile_mn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="mongolia_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_03_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_03_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="kcell_kz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_03_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="beeline_kz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_03_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tele2_kz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_03_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="altel_kz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="kazakhstan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_04_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="beeline_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ucell_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mobiuz_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="uzmobile_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_05_p"/>
+              </cond>
+              <then>
+                <rf_bands list="perfectum_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_04_06_p"/>
+              </cond>
+              <then>
+                <rf_bands list="evo_uz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="uzbekistan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_05_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_05_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="beeline_kg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_05_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="megacom_kg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_05_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="o_kg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="kyrgyzstan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_06_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_06_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tcell_tj_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_06_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="megafon_tj_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_06_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="babilon_tj_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_06_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="zetmobile_tj_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="tajikistan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_07_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_07_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tmcell_tm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_07_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mts_tm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_07_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="agts_tm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="turkmenistan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_08_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_08_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="etisalat_ae_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_08_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="du_ae_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="uae_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_09_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_09_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="chunghwa_tw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_09_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="fareastone_tw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_09_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="taiwanmobile_tw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="taiwan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_10_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_10_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="csl_hk_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_10_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="smartone_hk_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_10_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="three_hk_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_10_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cmhk_hk_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="hongkong_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_11_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_11_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ctm_mo_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_11_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="smartone_mo_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_11_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="three_mo_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="macau_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_12_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_12_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="docomo_jp_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_12_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="kddi_au_jp_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_12_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="softbank_jp_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_12_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="rakuten_jp_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="japan_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_13_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_13_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cmcc_cn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_13_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cu_cn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_13_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ctc_cn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_13_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cbn_cn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="china_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_14_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_14_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="singtel_sg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_14_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="starhub_sg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_14_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="m1_sg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_14_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="simba_sg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="singapore_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_15_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_15_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="maxis_my_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_15_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="celcomdigi_my_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_15_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="umobile_my_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_15_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="yes_my_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="malaysia_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_16_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_16_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ais_th_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_16_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="true_th_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_16_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="dtac_th_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="thailand_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_17_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_17_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="viettel_vn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_17_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vinaphone_vn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_17_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mobifone_vn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="vietnam_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_18_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_18_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telkomsel_id_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_18_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="xl_id_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_18_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="indosat_id_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_18_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="smartfren_id_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="indonesia_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_19_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_19_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="globe_ph_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_19_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="smart_ph_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_19_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="dito_ph_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="philippines_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_20_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_20_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cellcard_kh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_20_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="smart_kh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_20_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="metfone_kh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="cambodia_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_21_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_21_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="unitel_la_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_21_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="laotel_la_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_21_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="etl_la_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_21_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tplus_la_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="laos_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_22_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_22_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mpt_mm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_22_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ooredoo_mm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_22_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mytel_mm_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="myanmar_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_23_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_23_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="dst_bn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_23_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="progresif_bn_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="brunei_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_24_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_24_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telstra_au_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_24_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="optus_au_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_24_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_au_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="au_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_25_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_25_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="one_nz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_25_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="spark_nz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_25_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="2degrees_nz_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="nz_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_26_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_26_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ee_gb_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_26_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="o2_gb_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_26_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_gb_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_26_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="three_gb_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="gb_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_27_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_27_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telekom_de_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_27_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_de_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_27_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="o2_de_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="de_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_28_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_28_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="orange_fr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_28_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="sfr_fr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_28_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="bouygues_fr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_28_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="free_fr_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="fr_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_29_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_29_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tim_it_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_29_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_it_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_29_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="windtre_it_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_29_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="iliad_it_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="italy_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_30_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_30_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_es_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_30_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="orange_es_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_30_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="yoigo_es_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_30_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="movistar_es_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="spain_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_31_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_31_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_nl_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_31_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="kpn_nl_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_31_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="odido_nl_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="netherlands_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_32_m"/>
+          </cond>
+          <then>
+            <rf_bands list="eu_ce_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_33_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_33_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="stc_sa_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_33_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mobily_sa_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_33_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="zain_sa_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="sa_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_34_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_34_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="zain_kw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_34_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ooredoo_kw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_34_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="stc_kw_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="kw_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_35_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_35_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ooredoo_qa_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_35_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_qa_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="qa_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_36_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_36_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="batelco_bh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_36_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="zain_bh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_36_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="stc_bh_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="bh_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_37_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_37_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="omantel_om_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_37_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="ooredoo_om_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_37_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_om_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="om_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_38_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_38_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="orange_eg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_38_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodafone_eg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_38_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="etisalat_eg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_38_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="we_eg_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="eg_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_39_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_39_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="vodacom_za_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_39_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="mtn_za_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_39_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="cellc_za_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_39_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telkom_za_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_39_05_p"/>
+              </cond>
+              <then>
+                <rf_bands list="rain_za_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="za_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_40_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_40_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="iam_ma_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_40_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="orange_ma_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_40_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="inwi_ma_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="ma_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_41_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_41_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="tmobile_us_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_41_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="verizon_us_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_41_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="att_us_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_41_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="boost_us_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="us_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_42_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_42_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="rogers_ca_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_42_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="bell_ca_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_42_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telus_ca_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_42_04_p"/>
+              </cond>
+              <then>
+                <rf_bands list="freedom_ca_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="canada_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_43_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_43_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="telcel_mx_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_43_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="att_mx_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_43_03_p"/>
+              </cond>
+              <then>
+                <rf_bands list="altan_movistar_mx_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="mexico_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_44_m"/>
+          </cond>
+          <then>
+            <rf_bands list="russia_operators_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_45_m"/>
+          </cond>
+          <then>
+            <rf_bands list="ukraine_operators_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_46_m"/>
+          </cond>
+          <then>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_46_01_p"/>
+              </cond>
+              <then>
+                <rf_bands list="india_jio_b"/>
+                <stop/>
+              </then>
+            </if>
+            <if>
+              <cond>
+                <serving_plmn_in list="r5_region_46_02_p"/>
+              </cond>
+              <then>
+                <rf_bands list="india_airtel_vi_b"/>
+                <stop/>
+              </then>
+            </if>
+            <rf_bands list="india_fallback_b"/>
+            <stop/>
+          </then>
+        </if>
+        <if>
+          <cond>
+            <location_mcc_in list="r5_region_47_m"/>
+          </cond>
+          <then>
+            <rf_bands list="south_west_asia_b"/>
+            <stop/>
+          </then>
+        </if>
+      </actions>
+    </define_fullrat_config>
+    <feature single_sim="normal">dualmmode</feature>
+    <rat_capability_if base="none">
+      <include>G W L 5G</include>
+    </rat_capability_if>
+  </initial>
+  <if>
+    <any_of>
+      <not>
+        <phone_operating_mode>ONLINE</phone_operating_mode>
+      </not>
+      <not>
+        <have_location/>
+      </not>
+    </any_of>
+    <then>
+      <stop/>
+    </then>
+  </if>
+  <svc_mode>FULL</svc_mode>
+  <if>
+    <cond>
+      <location_mcc_in list="korea_location_mccs"/>
+    </cond>
+    <then>
+      <rat_capability base="none">
+        <include>W L 5G</include>
+      </rat_capability>
+    </then>
+    <else>
+      <rat_capability base="none">
+        <include>G W L 5G</include>
+      </rat_capability>
+    </else>
+  </if>
+  <if>
+    <all_of>
+      <location_mcc_in list="korea_location_mccs"/>
+      <serving_plmn_in list="lgu_home_plmns"/>
+    </all_of>
+    <then>
+      <rat_capability base="none">
+        <include>L 5G</include>
+      </rat_capability>
+      <rf_bands list="lgu_kr_b"/>
+    </then>
+  </if>
+</policy>

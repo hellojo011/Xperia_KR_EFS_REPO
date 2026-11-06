@@ -1,0 +1,48 @@
+[QIPCALL:ImsRtcpConfig]
+*rtcpLinkAlivenessTimer = 0
+*rtcpReportingIntervalInVideo = 1
+
+[QIPCALL:ImsVideoConfig]
+*vtImpactedByMobileData = 0
+*is_RetainVTConfig = 0
+
+[QIPCALL:ImsVoiceConfig]
+*earlyMediaDynamicSwitch = 0
+*emergCallCSOnly = 0
+*privacyType = 2
+*uriType = 1
+
+[QIPCALL:ImsVoiceQoSConfig]
+*localQosResReqAudio = 0
+*qosPreconditionsEnabled = 0
+
+[QIPCALL:ImsVoiceSessionTimerConfig]
+*sessionTimerEnabled = 1
+
+[QIPCALL:ImsVoiceSrvccConfig]
+*aSrvccEnabled = 0
+*bSrvccEnabled = 0
+*midcallSrvccEnabled = 0
+
+[Registration:RegistrationSettings]
+*enableRegistrationInLPM = 0
+
+[Registration:RegistrationTimers]
+*pdnRetryLongTimer = 5
+*wlanGaurdTimer = 30
+*wwanGaurdTimer = 30
+
+[SIPConfig:IPSec]
+*EncAlgo = 2
+*IntScheme = 1
+
+[SIPConfig:Transport]
+*TCPThresholdValue = 0
+
+[Ut:UtConfiguration]
+*BlockRequestIfNullRule = 0
+*maxResponseTimerValue = 10
+*pdnHysTimerValue = 5
+
+[MEDIA:MediaCommon]
+*DLDtmfMode = 1

@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<policy name="generic" enabled="true" schema_ver="1" policy_ver="45.0.6" changelist="$Change: GLOBAL-2026-10-23-R5.2-CA-DEPS $">
+  <initial>
+    <mcc_list ns="global" name="default_m">202 204 206 208 212 213 214 218 219 220 221 222 225 226 228 230 231 232 234 235 238 240 242 244 246 247 248 250 255 260 262 266 268 270 272 274 276 278 280 284 286 288 289 292 293 294 295 297 302 310 311 312 313 314 315 316 334 401 402 404 405 406 410 412 413 414 415 416 417 418 419 420 421 422 424 425 426 427 428 429 432 434 436 437 438 440 441 450 452 454 455 456 457 460 461 466 470 472 502 505 510 514 515 520 525 528 530 602 604 655</mcc_list>
+    <plmn_list ns="global" name="korea_plmns">450-05 450-06 450-08 450-11</plmn_list>
+    <plmn_list ns="global" name="japan_plmns">440-00 440-01 440-10 440-11 440-12 440-13 440-20 440-21 440-30 440-31 440-32 440-40 440-41 440-42 440-50 440-51 440-52 440-53 440-54 440-70 440-71 440-72 440-73 440-74 440-88 440-89 441-01 441-10 441-11 441-12 441-13 441-14 441-15 441-16</plmn_list>
+    <plmn_list ns="global" name="china_plmns">460-00 460-01 460-02 460-03 460-07 460-09 460-11 460-15 461-00</plmn_list>
+    <plmn_list ns="global" name="singapore_plmns">525-01 525-02 525-03 525-05 525-06 525-07 525-08 525-10</plmn_list>
+    <plmn_list ns="global" name="malaysia_plmns">502-11 502-12 502-16 502-18 502-19</plmn_list>
+    <plmn_list ns="global" name="thailand_plmns">520-01 520-05 520-18</plmn_list>
+    <plmn_list ns="global" name="vietnam_plmns">452-01 452-02 452-04</plmn_list>
+    <plmn_list ns="global" name="indonesia_plmns">510-01 510-09 510-10 510-11</plmn_list>
+    <plmn_list ns="global" name="philippines_plmns">515-02 515-03 515-66</plmn_list>
+    <plmn_list ns="global" name="cambodia_plmns">456-01 456-02 456-08</plmn_list>
+    <plmn_list ns="global" name="laos_plmns">457-01 457-02 457-03 457-08</plmn_list>
+    <plmn_list ns="global" name="myanmar_plmns">414-01 414-05 414-09</plmn_list>
+    <plmn_list ns="global" name="brunei_plmns">528-02 528-11</plmn_list>
+    <plmn_list ns="global" name="taiwan_plmns">466-01 466-02 466-03 466-06 466-07 466-11 466-88 466-92 466-93 466-97 466-99</plmn_list>
+    <plmn_list ns="global" name="hongkong_plmns">454-00 454-01 454-02 454-03 454-04 454-05 454-06 454-10 454-11 454-12 454-13 454-14 454-15 454-16 454-17 454-18 454-19 454-20 454-30</plmn_list>
+    <plmn_list ns="global" name="macau_plmns">455-00 455-01 455-02 455-03 455-04 455-05 455-06 455-07</plmn_list>
+    <plmn_list ns="global" name="mongolia_plmns">428-00 428-88 428-91 428-98 428-99</plmn_list>
+    <plmn_list ns="global" name="kazakhstan_plmns">401-01 401-02 401-07 401-08 401-77</plmn_list>
+    <plmn_list ns="global" name="uzbekistan_plmns">434-03 434-04 434-05 434-06 434-07 434-08 434-09</plmn_list>
+    <plmn_list ns="global" name="kyrgyzstan_plmns">437-01 437-05 437-09</plmn_list>
+    <plmn_list ns="global" name="tajikistan_plmns">436-01 436-02 436-03 436-04 436-05 436-10 436-12</plmn_list>
+    <plmn_list ns="global" name="turkmenistan_plmns">438-01 438-02 438-03</plmn_list>
+    <plmn_list ns="global" name="uae_plmns">424-02 424-03</plmn_list>
+    <plmn_list ns="global" name="gb_plmns">234-02 234-07 234-09 234-10 234-11 234-15 234-20 234-30 234-31 234-32 234-33 234-34 235-94</plmn_list>
+    <plmn_list ns="global" name="de_plmns">262-01 262-02 262-03 262-04 262-05 262-06 262-07 262-08 262-09 262-11 262-17 262-77 262-78</plmn_list>
+    <plmn_list ns="global" name="fr_plmns">208-01 208-02 208-09 208-10 208-13 208-15 208-16 208-20 208-21 208-35 208-36 208-88 208-91</plmn_list>
+    <plmn_list ns="global" name="sa_plmns">420-01 420-03 420-04</plmn_list>
+    <plmn_list ns="global" name="kw_plmns">419-02 419-03 419-04</plmn_list>
+    <plmn_list ns="global" name="qa_plmns">427-01 427-02</plmn_list>
+    <plmn_list ns="global" name="bh_plmns">426-01 426-02 426-04 426-05 426-06</plmn_list>
+    <plmn_list ns="global" name="om_plmns">422-02 422-03 422-04 422-06</plmn_list>
+    <plmn_list ns="global" name="eg_plmns">602-01 602-02 602-03 602-04</plmn_list>
+    <plmn_list ns="global" name="za_plmns">655-01 655-02 655-05 655-07 655-10 655-12 655-19 655-38</plmn_list>
+    <plmn_list ns="global" name="ma_plmns">604-00 604-01 604-02 604-05 604-06</plmn_list>
+    <plmn_list ns="global" name="us_plmns">310-010 310-012 310-013 310-016 310-030 310-070 310-080 310-090 310-120 310-150 310-160 310-170 310-200 310-210 310-220 310-230 310-240 310-250 310-260 310-270 310-280 310-310 310-350 310-380 310-410 310-490 310-530 310-590 310-591 310-592 310-593 310-594 310-595 310-596 310-597 310-598 310-599 310-660 310-670 310-680 310-770 310-800 310-820 310-830 310-890 310-891 310-892 310-893 310-894 310-895 310-896 310-897 310-898 310-899 310-910 310-950 311-070 311-090 311-110 311-180 311-190 311-200 311-225 311-228 311-229 311-260 311-270 311-271 311-272 311-273 311-274 311-275 311-276 311-277 311-278 311-279 311-280 311-281 311-282 311-283 311-284 311-285 311-286 311-287 311-288 311-289 311-390 311-440 311-480 311-481 311-482 311-483 311-484 311-485 311-486 311-487 311-488 311-489 311-490 311-580 311-588 311-589 311-590 311-800 311-810 311-870 311-880 311-882 311-940 312-090 312-190 312-250 312-530 312-670 312-680 312-770 313-100 313-110 313-120 313-130 313-140 313-210 313-340 313-350 313-360 314-260 314-270 314-390 314-800</plmn_list>
+    <mcc_list ns="global" name="japan_other_m">440 441</mcc_list>
+    <mcc_list ns="global" name="fcc_m">310 311 312 313 314 315 316 330 332 544</mcc_list>
+    <mcc_list ns="global" name="ce_m">202 206 212 213 218 219 220 221 225 226 228 230 231 232 238 240 242 244 246 247 248 260 266 268 270 272 274 276 278 280 284 286 288 289 292 293 294 295 297</mcc_list>
+    <mcc_list ns="global" name="local_service_m">991 999</mcc_list>
+    <plmn_list ns="global" name="docomo_jp_p">440-10</plmn_list>
+    <plmn_list ns="global" name="kddi_jp_p">440-01 440-50 440-51 440-52 440-53 440-54</plmn_list>
+    <plmn_list ns="global" name="rakuten_jp_p">440-11</plmn_list>
+    <plmn_list ns="global" name="softbank_jp_p">440-00 440-20 440-21 441-01</plmn_list>
+    <plmn_list ns="global" name="local_5G_p">999-002</plmn_list>
+    <mcc_list ns="global" name="korea_mccs">450</mcc_list>
+    <plmn_list ns="global" name="skt_kr_plmns">450-05 450-11</plmn_list>
+    <plmn_list ns="global" name="kt_kr_plmns">450-08</plmn_list>
+    <plmn_list ns="global" name="lgu_kr_plmns">450-06</plmn_list>
+    <plmn_list ns="global" name="australia_plmns">505-01 505-02 505-03 505-71 505-72 505-90</plmn_list>
+    <plmn_list ns="global" name="new_zealand_plmns">530-01 530-05 530-24</plmn_list>
+    <plmn_list ns="global" name="italy_plmns">222-01 222-10 222-50 222-88</plmn_list>
+    <plmn_list ns="global" name="spain_plmns">214-01 214-03 214-04 214-07</plmn_list>
+    <plmn_list ns="global" name="netherlands_plmns">204-04 204-08 204-16</plmn_list>
+    <plmn_list ns="global" name="easttimor_plmns">514-01 514-02 514-03</plmn_list>
+    <plmn_list ns="global" name="pakistan_plmns">410-01 410-03 410-04 410-06</plmn_list>
+    <plmn_list ns="global" name="india_plmns">404-10 404-11 404-20 404-45 405-854 405-865 405-874 406-01 406-02 406-03</plmn_list>
+    <plmn_list ns="global" name="srilanka_plmns">413-01 413-02 413-03</plmn_list>
+    <plmn_list ns="global" name="bangladesh_plmns">470-01 470-02 470-03 470-04</plmn_list>
+    <plmn_list ns="global" name="maldives_plmns">472-01 472-02</plmn_list>
+    <plmn_list ns="global" name="nepal_plmns">429-01 429-02 429-04</plmn_list>
+    <plmn_list ns="global" name="afghanistan_plmns">412-01 412-20 412-40 412-50</plmn_list>
+    <plmn_list ns="global" name="bhutan_plmns">402-11 402-77</plmn_list>
+    <plmn_list ns="global" name="israel_plmns">425-01 425-02 425-03 425-07</plmn_list>
+    <plmn_list ns="global" name="jordan_plmns">416-01 416-03 416-77</plmn_list>
+    <plmn_list ns="global" name="lebanon_plmns">415-01 415-03</plmn_list>
+    <plmn_list ns="global" name="iraq_plmns">418-20 418-30 418-40</plmn_list>
+    <plmn_list ns="global" name="iran_plmns">432-11 432-20 432-35</plmn_list>
+    <plmn_list ns="global" name="syria_plmns">417-01 417-02 417-09</plmn_list>
+    <plmn_list ns="global" name="yemen_plmns">421-01 421-02 421-04</plmn_list>
+    <plmn_list ns="global" name="ukraine_plmns">255-01 255-02 255-03 255-04 255-06 255-07 255-21</plmn_list>
+    <plmn_list ns="global" name="russia_plmns">250-01 250-02 250-11 250-20 250-32 250-35 250-39 250-54 250-96 250-99</plmn_list>
+    <plmn_list ns="global" name="canada_plmns">302-131 302-150 302-220 302-221 302-222 302-250 302-270 302-300 302-310 302-320 302-330 302-340 302-350 302-360 302-370 302-380 302-420 302-490 302-491 302-500 302-510 302-520 302-530 302-590 302-610 302-620 302-630 302-640 302-660 302-680 302-681 302-690 302-720 302-721 302-722 302-723 302-740 302-741 302-750 302-760 302-780 302-781 302-790 302-820 302-860 302-880</plmn_list>
+    <plmn_list ns="global" name="mexico_plmns">334-001 334-010 334-020 334-030 334-040 334-050 334-066 334-070 334-080 334-090 334-110 334-120 334-130 334-140 334-150 334-160 334-170 334-180 334-190 334-200 334-210 334-220 334-230 334-240</plmn_list>
+    <plmn_list ns="global" name="tmobile_us_p">310-120 310-160 310-200 310-210 310-220 310-230 310-240 310-250 310-260 310-270 310-310 310-490 310-530 310-660 310-770 310-800 310-830 311-225 311-228 311-229 311-260 311-490 311-580 311-588 311-589 311-870 311-880 311-882 311-940 312-190 312-250 312-530</plmn_list>
+    <plmn_list ns="global" name="verizon_us_p">310-010 310-012 310-013 310-350 310-590 310-591 310-592 310-593 310-594 310-595 310-596 310-597 310-598 310-599 310-820 310-890 310-891 310-892 310-893 310-894 310-895 310-896 310-897 310-898 310-899 310-910 311-110 311-270 311-271 311-272 311-273 311-274 311-275 311-276 311-277 311-278 311-279 311-280 311-281 311-282 311-283 311-284 311-285 311-286 311-287 311-288 311-289 311-390 311-440 311-480 311-481 311-482 311-483 311-484 311-485 311-486 311-487 311-488 311-489 311-590 311-800 311-810 312-770</plmn_list>
+    <plmn_list ns="global" name="att_us_p">310-016 310-030 310-070 310-080 310-090 310-150 310-170 310-280 310-380 310-410 310-670 310-680 310-950 311-070 311-090 311-180 311-190 312-090 312-670 312-680 313-100 313-110 313-120 313-130 313-140 313-210 314-260 314-270 314-390</plmn_list>
+    <plmn_list ns="global" name="boost_us_p">311-200 313-340 313-350 313-360 314-800</plmn_list>
+    <mcc_list ns="global" name="r5_region_01_m">450</mcc_list>
+    <plmn_list ns="global" name="r5_region_01_01_p">450-05 450-11</plmn_list>
+    <plmn_list ns="global" name="r5_region_01_02_p">450-08</plmn_list>
+    <plmn_list ns="global" name="r5_region_01_03_p">450-06</plmn_list>
+    <mcc_list ns="global" name="r5_region_02_m">428</mcc_list>
+    <plmn_list ns="global" name="r5_region_02_01_p">428-88</plmn_list>
+    <plmn_list ns="global" name="r5_region_02_02_p">428-99</plmn_list>
+    <plmn_list ns="global" name="r5_region_02_03_p">428-00 428-91</plmn_list>
+    <plmn_list ns="global" name="r5_region_02_04_p">428-98</plmn_list>
+    <mcc_list ns="global" name="r5_region_03_m">401</mcc_list>
+    <plmn_list ns="global" name="r5_region_03_01_p">401-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_03_02_p">401-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_03_03_p">401-77</plmn_list>
+    <plmn_list ns="global" name="r5_region_03_04_p">401-07 401-08</plmn_list>
+    <mcc_list ns="global" name="r5_region_04_m">434</mcc_list>
+    <plmn_list ns="global" name="r5_region_04_01_p">434-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_04_02_p">434-05</plmn_list>
+    <plmn_list ns="global" name="r5_region_04_03_p">434-07</plmn_list>
+    <plmn_list ns="global" name="r5_region_04_04_p">434-03 434-08</plmn_list>
+    <plmn_list ns="global" name="r5_region_04_05_p">434-06</plmn_list>
+    <plmn_list ns="global" name="r5_region_04_06_p">434-09</plmn_list>
+    <mcc_list ns="global" name="r5_region_05_m">437</mcc_list>
+    <plmn_list ns="global" name="r5_region_05_01_p">437-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_05_02_p">437-05</plmn_list>
+    <plmn_list ns="global" name="r5_region_05_03_p">437-09</plmn_list>
+    <mcc_list ns="global" name="r5_region_06_m">436</mcc_list>
+    <plmn_list ns="global" name="r5_region_06_01_p">436-01 436-02 436-12</plmn_list>
+    <plmn_list ns="global" name="r5_region_06_02_p">436-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_06_03_p">436-04 436-10</plmn_list>
+    <plmn_list ns="global" name="r5_region_06_04_p">436-05</plmn_list>
+    <mcc_list ns="global" name="r5_region_07_m">438</mcc_list>
+    <plmn_list ns="global" name="r5_region_07_01_p">438-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_07_02_p">438-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_07_03_p">438-03</plmn_list>
+    <mcc_list ns="global" name="r5_region_08_m">424</mcc_list>
+    <plmn_list ns="global" name="r5_region_08_01_p">424-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_08_02_p">424-03</plmn_list>
+    <mcc_list ns="global" name="r5_region_09_m">466</mcc_list>
+    <plmn_list ns="global" name="r5_region_09_01_p">466-11 466-92</plmn_list>
+    <plmn_list ns="global" name="r5_region_09_02_p">466-01 466-02 466-03 466-06 466-07 466-88</plmn_list>
+    <plmn_list ns="global" name="r5_region_09_03_p">466-93 466-97 466-99</plmn_list>
+    <mcc_list ns="global" name="r5_region_10_m">454</mcc_list>
+    <plmn_list ns="global" name="r5_region_10_01_p">454-00 454-02 454-10 454-16 454-18 454-19 454-20</plmn_list>
+    <plmn_list ns="global" name="r5_region_10_02_p">454-06 454-15 454-17</plmn_list>
+    <plmn_list ns="global" name="r5_region_10_03_p">454-03 454-04 454-05 454-14</plmn_list>
+    <plmn_list ns="global" name="r5_region_10_04_p">454-12 454-13 454-30</plmn_list>
+    <mcc_list ns="global" name="r5_region_11_m">455</mcc_list>
+    <plmn_list ns="global" name="r5_region_11_01_p">455-01 455-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_11_02_p">455-00 455-06</plmn_list>
+    <plmn_list ns="global" name="r5_region_11_03_p">455-03 455-05</plmn_list>
+    <mcc_list ns="global" name="r5_region_12_m">440 441</mcc_list>
+    <plmn_list ns="global" name="r5_region_12_01_p">440-10</plmn_list>
+    <plmn_list ns="global" name="r5_region_12_02_p">440-01 440-50 440-51 440-52 440-53 440-54</plmn_list>
+    <plmn_list ns="global" name="r5_region_12_03_p">440-00 440-20 440-21 441-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_12_04_p">440-11</plmn_list>
+    <mcc_list ns="global" name="r5_region_13_m">460 461</mcc_list>
+    <plmn_list ns="global" name="r5_region_13_01_p">460-00 460-02 460-07</plmn_list>
+    <plmn_list ns="global" name="r5_region_13_02_p">460-01 460-09</plmn_list>
+    <plmn_list ns="global" name="r5_region_13_03_p">460-03 460-11</plmn_list>
+    <plmn_list ns="global" name="r5_region_13_04_p">460-15 461-00</plmn_list>
+    <mcc_list ns="global" name="r5_region_14_m">525</mcc_list>
+    <plmn_list ns="global" name="r5_region_14_01_p">525-01 525-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_14_02_p">525-05 525-06 525-07 525-08</plmn_list>
+    <plmn_list ns="global" name="r5_region_14_03_p">525-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_14_04_p">525-10</plmn_list>
+    <mcc_list ns="global" name="r5_region_15_m">502</mcc_list>
+    <plmn_list ns="global" name="r5_region_15_01_p">502-12</plmn_list>
+    <plmn_list ns="global" name="r5_region_15_02_p">502-16 502-19</plmn_list>
+    <plmn_list ns="global" name="r5_region_15_03_p">502-18</plmn_list>
+    <plmn_list ns="global" name="r5_region_15_04_p">502-11</plmn_list>
+    <mcc_list ns="global" name="r5_region_16_m">520</mcc_list>
+    <plmn_list ns="global" name="r5_region_16_01_p">520-01 520-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_16_02_p">520-04 520-05 520-99</plmn_list>
+    <plmn_list ns="global" name="r5_region_16_03_p">520-18</plmn_list>
+    <mcc_list ns="global" name="r5_region_17_m">452</mcc_list>
+    <plmn_list ns="global" name="r5_region_17_01_p">452-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_17_02_p">452-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_17_03_p">452-01</plmn_list>
+    <mcc_list ns="global" name="r5_region_18_m">510</mcc_list>
+    <plmn_list ns="global" name="r5_region_18_01_p">510-10</plmn_list>
+    <plmn_list ns="global" name="r5_region_18_02_p">510-11</plmn_list>
+    <plmn_list ns="global" name="r5_region_18_03_p">510-01 510-21 510-89</plmn_list>
+    <plmn_list ns="global" name="r5_region_18_04_p">510-09 510-28</plmn_list>
+    <mcc_list ns="global" name="r5_region_19_m">515</mcc_list>
+    <plmn_list ns="global" name="r5_region_19_01_p">515-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_19_02_p">515-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_19_03_p">515-66</plmn_list>
+    <mcc_list ns="global" name="r5_region_20_m">456</mcc_list>
+    <plmn_list ns="global" name="r5_region_20_01_p">456-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_20_02_p">456-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_20_03_p">456-08</plmn_list>
+    <mcc_list ns="global" name="r5_region_21_m">457</mcc_list>
+    <plmn_list ns="global" name="r5_region_21_01_p">457-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_21_02_p">457-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_21_03_p">457-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_21_04_p">457-08</plmn_list>
+    <mcc_list ns="global" name="r5_region_22_m">414</mcc_list>
+    <plmn_list ns="global" name="r5_region_22_01_p">414-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_22_02_p">414-05</plmn_list>
+    <plmn_list ns="global" name="r5_region_22_03_p">414-09</plmn_list>
+    <mcc_list ns="global" name="r5_region_23_m">528</mcc_list>
+    <plmn_list ns="global" name="r5_region_23_01_p">528-11</plmn_list>
+    <plmn_list ns="global" name="r5_region_23_02_p">528-02</plmn_list>
+    <mcc_list ns="global" name="r5_region_24_m">505</mcc_list>
+    <plmn_list ns="global" name="r5_region_24_01_p">505-01 505-71 505-72</plmn_list>
+    <plmn_list ns="global" name="r5_region_24_02_p">505-02 505-90</plmn_list>
+    <plmn_list ns="global" name="r5_region_24_03_p">505-03 505-06 505-12</plmn_list>
+    <mcc_list ns="global" name="r5_region_25_m">530</mcc_list>
+    <plmn_list ns="global" name="r5_region_25_01_p">530-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_25_02_p">530-05</plmn_list>
+    <plmn_list ns="global" name="r5_region_25_03_p">530-24</plmn_list>
+    <mcc_list ns="global" name="r5_region_26_m">234 235</mcc_list>
+    <plmn_list ns="global" name="r5_region_26_01_p">234-30 234-31 234-32 234-33 234-34</plmn_list>
+    <plmn_list ns="global" name="r5_region_26_02_p">234-02 234-10 234-11</plmn_list>
+    <plmn_list ns="global" name="r5_region_26_03_p">234-07 234-15</plmn_list>
+    <plmn_list ns="global" name="r5_region_26_04_p">234-20 235-94</plmn_list>
+    <mcc_list ns="global" name="r5_region_27_m">262</mcc_list>
+    <plmn_list ns="global" name="r5_region_27_01_p">262-01 262-06 262-78</plmn_list>
+    <plmn_list ns="global" name="r5_region_27_02_p">262-02 262-04 262-09</plmn_list>
+    <plmn_list ns="global" name="r5_region_27_03_p">262-03 262-05 262-07 262-08 262-11 262-17 262-77</plmn_list>
+    <mcc_list ns="global" name="r5_region_28_m">208</mcc_list>
+    <plmn_list ns="global" name="r5_region_28_01_p">208-01 208-02 208-91</plmn_list>
+    <plmn_list ns="global" name="r5_region_28_02_p">208-09 208-10 208-13</plmn_list>
+    <plmn_list ns="global" name="r5_region_28_03_p">208-20 208-21 208-88</plmn_list>
+    <plmn_list ns="global" name="r5_region_28_04_p">208-15 208-16 208-35 208-36</plmn_list>
+    <mcc_list ns="global" name="r5_region_29_m">222</mcc_list>
+    <plmn_list ns="global" name="r5_region_29_01_p">222-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_29_02_p">222-10</plmn_list>
+    <plmn_list ns="global" name="r5_region_29_03_p">222-88 222-99</plmn_list>
+    <plmn_list ns="global" name="r5_region_29_04_p">222-50</plmn_list>
+    <mcc_list ns="global" name="r5_region_30_m">214</mcc_list>
+    <plmn_list ns="global" name="r5_region_30_01_p">214-01 214-06</plmn_list>
+    <plmn_list ns="global" name="r5_region_30_02_p">214-03 214-09</plmn_list>
+    <plmn_list ns="global" name="r5_region_30_03_p">214-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_30_04_p">214-05 214-07</plmn_list>
+    <mcc_list ns="global" name="r5_region_31_m">204</mcc_list>
+    <plmn_list ns="global" name="r5_region_31_01_p">204-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_31_02_p">204-08</plmn_list>
+    <plmn_list ns="global" name="r5_region_31_03_p">204-16 204-20</plmn_list>
+    <mcc_list ns="global" name="r5_region_32_m">202 206 212 213 218 219 220 221 225 226 228 230 231 232 238 240 242 244 246 247 248 257 259 260 266 268 270 272 274 276 278 280 282 283 284 286 288 289 290 292 293 294 295 297 400</mcc_list>
+    <mcc_list ns="global" name="r5_region_33_m">420</mcc_list>
+    <plmn_list ns="global" name="r5_region_33_01_p">420-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_33_02_p">420-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_33_03_p">420-04</plmn_list>
+    <mcc_list ns="global" name="r5_region_34_m">419</mcc_list>
+    <plmn_list ns="global" name="r5_region_34_01_p">419-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_34_02_p">419-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_34_03_p">419-04</plmn_list>
+    <mcc_list ns="global" name="r5_region_35_m">427</mcc_list>
+    <plmn_list ns="global" name="r5_region_35_01_p">427-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_35_02_p">427-02</plmn_list>
+    <mcc_list ns="global" name="r5_region_36_m">426</mcc_list>
+    <plmn_list ns="global" name="r5_region_36_01_p">426-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_36_02_p">426-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_36_03_p">426-04 426-06</plmn_list>
+    <mcc_list ns="global" name="r5_region_37_m">422</mcc_list>
+    <plmn_list ns="global" name="r5_region_37_01_p">422-02 422-04</plmn_list>
+    <plmn_list ns="global" name="r5_region_37_02_p">422-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_37_03_p">422-06</plmn_list>
+    <mcc_list ns="global" name="r5_region_38_m">602</mcc_list>
+    <plmn_list ns="global" name="r5_region_38_01_p">602-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_38_02_p">602-02</plmn_list>
+    <plmn_list ns="global" name="r5_region_38_03_p">602-03</plmn_list>
+    <plmn_list ns="global" name="r5_region_38_04_p">602-04</plmn_list>
+    <mcc_list ns="global" name="r5_region_39_m">655</mcc_list>
+    <plmn_list ns="global" name="r5_region_39_01_p">655-01</plmn_list>
+    <plmn_list ns="global" name="r5_region_39_02_p">655-10 655-12</plmn_list>
+    <plmn_list ns="global" name="r5_region_39_03_p">655-07</plmn_list>
+    <plmn_list ns="global" name="r5_region_39_04_p">655-02 655-05</plmn_list>
+    <plmn_list ns="global" name="r5_region_39_05_p">655-19 655-38</plmn_list>
+    <mcc_list ns="global" name="r5_region_40_m">604</mcc_list>
+    <plmn_list ns="global" name="r5_region_40_01_p">604-01 604-06</plmn_list>
+    <plmn_list ns="global" name="r5_region_40_02_p">604-00</plmn_list>
+    <plmn_list ns="global" name="r5_region_40_03_p">604-02 604-05</plmn_list>
+    <mcc_list ns="global" name="r5_region_41_m">310 311 312 313 314 315 316 330 332 535 544</mcc_list>
+    <plmn_list ns="global" name="r5_region_41_01_p">310-120 310-160 310-200 310-210 310-220 310-230 310-240 310-250 310-260 310-270 310-310 310-490 310-530 310-660 310-770 310-800 310-830 311-225 311-228 311-229 311-260 311-490 311-580 311-588 311-589 311-870 311-880 311-882 311-940 312-190 312-250 312-530</plmn_list>
+    <plmn_list ns="global" name="r5_region_41_02_p">310-010 310-012 310-013 310-350 310-590 310-591 310-592 310-593 310-594 310-595 310-596 310-597 310-598 310-599 310-820 310-890 310-891 310-892 310-893 310-894 310-895 310-896 310-897 310-898 310-899 310-910 311-110 311-270 311-271 311-272 311-273 311-274 311-275 311-276 311-277 311-278 311-279 311-280 311-281 311-282 311-283 311-284 311-285 311-286 311-287 311-288 311-289 311-390 311-440 311-480 311-481 311-482 311-483 311-484 311-485 311-486 311-487 311-488 311-489 311-590 311-800 311-810 312-770</plmn_list>
+    <plmn_list ns="global" name="r5_region_41_03_p">310-016 310-030 310-070 310-080 310-090 310-150 310-170 310-280 310-380 310-410 310-670 310-680 310-950 311-070 311-090 311-180 311-190 312-090 312-670 312-680 313-100 313-110 313-120 313-130 313-140 313-210 314-260 314-270 314-390</plmn_list>
+    <plmn_list ns="global" name="r5_region_41_04_p">311-200 313-340 313-350 313-360 314-800</plmn_list>
+    <mcc_list ns="global" name="r5_region_42_m">302</mcc_list>
+    <plmn_list ns="global" name="r5_region_42_01_p">302-320 302-370 302-720 302-721 302-722 302-723 302-740 302-741 302-820</plmn_list>
+    <plmn_list ns="global" name="r5_region_42_02_p">302-250 302-610 302-630 302-640 302-660 302-690</plmn_list>
+    <plmn_list ns="global" name="r5_region_42_03_p">302-220 302-221 302-222 302-360 302-420 302-760 302-860</plmn_list>
+    <plmn_list ns="global" name="r5_region_42_04_p">302-490 302-491 302-500 302-510 302-520</plmn_list>
+    <mcc_list ns="global" name="r5_region_43_m">334</mcc_list>
+    <plmn_list ns="global" name="r5_region_43_01_p">334-020</plmn_list>
+    <plmn_list ns="global" name="r5_region_43_02_p">334-050 334-090</plmn_list>
+    <plmn_list ns="global" name="r5_region_43_03_p">334-030 334-140</plmn_list>
+    <mcc_list ns="global" name="r5_region_44_m">250</mcc_list>
+    <mcc_list ns="global" name="r5_region_45_m">255</mcc_list>
+    <mcc_list ns="global" name="r5_region_46_m">404 405 406</mcc_list>
+    <plmn_list ns="global" name="r5_region_46_01_p">405-854 405-865 405-874</plmn_list>
+    <plmn_list ns="global" name="r5_region_46_02_p">404-10 404-11 404-20 404-45</plmn_list>
+    <mcc_list ns="global" name="r5_region_47_m">402 410 412 413 415 416 417 418 421 425 429 432 470 472 514</mcc_list>
+  <!-- R5.2: CA list values preserved from R5.1; independent of device-native global_defines.xml. --><mcc_list name="r52_ca_china_mccs" ns="global"> 460 </mcc_list>
+    <plmn_list name="r52_ca_ct_plmn" ns="global"> 460-03 460-05 460-11 460-12 455-02 455-07 460-59 </plmn_list>
+    <plmn_list name="r52_ca_cmcc_plmn" ns="global"> 460-00 460-02 460-04 460-07 460-08 </plmn_list>
+    <plmn_list name="r52_ca_cu_plmn" ns="global"> 460-01 460-06 460-09 </plmn_list>
+    </initial>
+</policy>
